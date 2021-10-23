@@ -1,24 +1,135 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import "./index.css";
+import { Form, Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+    <input
+    type="text"
+    name="nom"
+    value=""
+    size="40"
+    className="
+      wpcf7-form-control wpcf7-text wpcf7-validates-as-required
+      form-control
+      g-bg-transparent g-bg-transparent--focus
+      rounded-0
+      g-pa-10-16
+    "
+    aria-required="true"
+    aria-invalid="false"
+    placeholder="Nom"
+  />
+  <input
+    type="text"
+    name="prenom"
+    value=""
+    size="40"
+    className="
+      wpcf7-form-control wpcf7-text wpcf7-validates-as-required
+      form-control
+      g-bg-transparent g-bg-transparent--focus
+      rounded-0
+      g-pa-10-16
+    "
+    aria-required="true"
+    aria-invalid="false"
+    placeholder="Prénom"
+  />
+  <input
+    type="text"
+    name="age"
+    value=""
+    size="40"
+    className="
+      wpcf7-form-control wpcf7-text wpcf7-validates-as-required
+      form-control
+      g-bg-transparent g-bg-transparent--focus
+      rounded-0
+      g-pa-10-16
+    "
+    aria-required="true"
+    aria-invalid="false"
+    placeholder="Age"
+  />
+  <input
+    type="text"
+    name="sex"
+    value=""
+    size="40"
+    class="
+      wpcf7-form-control wpcf7-text wpcf7-validates-as-required
+      form-control
+      g-bg-transparent g-bg-transparent--focus
+      rounded-0
+      g-pa-10-16
+    "
+    aria-required="true"
+    aria-invalid="false"
+    placeholder="Sex"
+  />
+ 
+    
+  <input
+    type="email"
+    name="email"
+    value=""
+    size="40"
+    className="
+      wpcf7-form-control
+      wpcf7-text
+      wpcf7-email
+      wpcf7-validates-as-required
+      wpcf7-validates-as-email
+      form-control
+      g-bg-transparent g-bg-transparent--focus
+      rounded-0
+      g-pa-10-16
+    "
+    aria-required="true"
+    aria-invalid="false"
+    placeholder="Email"
+  />
+  <input
+    type="tel"
+    name="tel"
+    value=""
+    size="40"
+    className="
+      wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel
+      form-control
+      g-bg-transparent g-bg-transparent--focus
+      rounded-0
+      g-pa-10-16
+    "
+    aria-invalid="false"
+    placeholder="Téléphone"
+  />
+  <textarea
+    name="message"
+    cols="40"
+    rows="2"
+    class="
+      wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required
+      form-control
+      g-resize-none g-bg-transparent g-bg-transparent--focus
+      rounded-0
+      g-pa-10-16
+    "
+    aria-required="true"
+    aria-invalid="false"
+    placeholder="Message..."
+  ></textarea>
+  <input
+    type="submit"
+    value="envoyer"
+    className="pp "
+  />
+ </div>
+  
   );
 }
 
